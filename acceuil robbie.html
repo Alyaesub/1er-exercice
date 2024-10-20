@@ -11,35 +11,67 @@
 
     <body>
         <header>
-            <nav>
-                <div class="entete">
-                    <a href=" a-propos.html">
-                        <img src="image/logo.jpeg" alt="Logo Robbie Lens">
-                    </a>
+            <nav>  
+                 <img src="image/logo.jpeg" alt="Logo Robbie Lens">
+                <div>
+                    <a href="acceuil robbie.html">Accueil</a>
                     <a href="a-propos.html">A propos</a>
+                    <a href="portfolio.html">Portfolio</a>
                 </div>
             </nav>
         </header>
         <main>
-            <section>
-                <h1>Photographie</h1>   
-
-                <p>  
-                    Où <em>professionalisme</em> s’allie avec <em>passion</em> Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion
-                    qui m’anime : capturer l’essence de chaque instant.
-                </p>
-                
-                <img src=" image/robbie-lens.jpeg" alt="Portrait avec effet de la photographe Robbie Lens">
-                
+            <section class="accueil-introduction">
                 <div>
+                    <h1>Robbie Lens Photographie</h1>   
+                    <p>  
+                        Où <em>professionalisme</em> s’allie avec <em>passion</em> Depuis plus de 5 ans maintenant, j’exerce mon métier avec la passion
+                        qui m’anime : capturer l’essence de chaque instant.
+                    </p>
                     <a href="" class="cta"> Un projet ? Ecrivez moi </a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="pied-de-page">
-                <img src="image/logo.jpeg " alt="Logo Robbie Lens">
+                </div>  
+                
+                                
+                <img src=" image/robbie-lens.jpeg" alt="Portrait avec effet de la photographe Robbie Lens">       
+            </section> 
             
+            <section class="accueil-photos">
+                <h2>Mon dernier projet</h2>
+                <div>
+                    <img src="image/element-1.png" alt="twelve apostles - Australie">
+                    <img src="image/element-2.png" alt="wai-o-tapu- nouvelle-zélande">
+                    <img src="image/element-3.png" alt="parc national d'abel tasman - nouvelle-zélande">
+                </div>
+                <div>
+                    <img src="image/element-4.png" alt="lac Rotorua - nouvelle-zélande">
+                    <img src="image/element-5.png" alt="Milford Sound - nouvelle-zélande">
+                    <img src="image/element-6.png" alt="Lac Wanaka - nouvelle-zélande">
+                </div>
+            </section>   
+            <section id="contact" class="section-contact">
+                <h2>Parlons de votre projet</h2>
+                <form method="get" action="">
+                    <div class="form-nom-email">
+                        <div class="form-column">
+                            <label for="nom">nom</label>
+                            <input type="text" name="nom" id="nom">
+                        </div>
+                        <div class="form-column">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" rows="10"></textarea>
+                    <input type="submit" value="ENVOYER" class="cta">
+                </form>
+            </section>
+        
+        </main>
+
+        <footer>
+            <img src="image/logo.jpeg " alt="Logo Robbie Lens">
+            <div>
                 <a target="_blank" href=" https://twitter.com/ ">
                     <img src="image/twitter.jpeg " alt="Logo twitter">
                 </a>
