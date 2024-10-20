@@ -130,7 +130,7 @@ nav a {
 .accueil-introduction {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    max-width: 1000px;
     align-items: center;
     margin:auto;
 }
@@ -223,4 +223,103 @@ h2 {
     text-align: center;
 }
 
+.section-contact h2 {
+    color: #a5b4fc;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+}
+
+.form-nom-email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+input,
+textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 996px) {
+    .section-tarifs {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .accueil-introduction {
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .grid-paysages {
+        grid-template-columns: 1fr;
+        gap:15px;
+    }
+
+    .grid-portraits {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav img {
+        margin-bottom: 20px;
+    }
+
+    header,
+    footer {
+        padding: 20px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 50px 20px 50px 20px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 
